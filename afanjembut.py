@@ -149,7 +149,7 @@ class ByBit:
                 self.wait(60)
         self.log("Jeda 5 menit sebelum kembali bermain...", "infoA1", account_number)
         self.wait(300)
-        return True
+        self.score(account_number)
 
     def run(self, account_number):
         login_result = self.login()
